@@ -1,0 +1,3 @@
+    Muito provavelmente, a base de dados não era muito grande, o que fazia com que o computador
+levasse mais tempo para organizar as threads e colocá-las para rodar do que simplesmente fazer a
+ordenação sequencialmente.
