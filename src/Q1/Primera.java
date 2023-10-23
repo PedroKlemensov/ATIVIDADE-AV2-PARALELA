@@ -52,7 +52,7 @@ class calculobaskara implements Runnable {
 
     }
 
-
+    @Override
     public void run() {
         if(metodo) {
             System.out.println("x1:" +(-b+Math.sqrt(b*b-4*a*c))/(2*a));
