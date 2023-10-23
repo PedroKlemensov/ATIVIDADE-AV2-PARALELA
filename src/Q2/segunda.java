@@ -56,7 +56,7 @@ class achaprimo implements Runnable {
     public long getResultado() {
         return resultado;
     }
-    
+
     @Override
     public void run() {
         tempoicio = System.nanoTime();
