@@ -1,9 +1,18 @@
 package Q6;
 
-public class sexta {
-    public static void main(String[] args) {
+import java.util.Scanner;
 
-        Gerente g =  new Gerente();
+public class sexta {
+
+    public static void main(String[] args) throws InterruptedException {
+
+        Scanner s = new Scanner(System.in);
+        System.out.println("vamos ate que numero?");
+        int limite = s.nextInt();
+
+
+
+        Gerente g =  new Gerente(limite);
         g.inicio();
 
     }
