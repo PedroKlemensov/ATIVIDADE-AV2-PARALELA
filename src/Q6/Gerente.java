@@ -23,12 +23,11 @@ public class Gerente {
 
         Thread[] threads = new Thread[numeroCPUs];
 
-        int tamanhoVetor = numeros.length;
-        int tamanhoParte = tamanhoVetor / numeroCPUs;
+        int tamanhoParte = limite / numeroCPUs;
 
         for (int i = 0; i < numeroCPUs; i++) {
             int inicio = i * tamanhoParte;
-            int fim = (i == numeroCPUs - 1) ? tamanhoVetor : (i + 1) * tamanhoParte;
+                    int fim = (i == numeroCPUs - 1) ? limite : (i + 1) * tamanhoParte;
             threads[i] = new Thread(new Conta(inicio, fim - 1, numeros, somaParTotal,somaInparTotal));
         }
 
