@@ -1,0 +1,9 @@
+    Insertion Sort  é um algoritmo de ordenação que, dado uma estrutura constrói uma matriz final com
+ um elemento de cada vez, uma inserção por vez.
+    Nao e interesante a sua paralezasao por ele mecher diretamente em posicoes do vetor e por seu funcinamento
+ ser ecencialmente sequencial
+
+    que combina características de estruturas de dados de heap (ou "árvore binária de heap") com um processo de
+ seleção e remoção dos elementos para construir a lista ordenada.
+    Heap Sort não é um algoritmo naturalmente paralelizável devido à sua dependência sequencial e à falta de
+divisão natural dos dados
