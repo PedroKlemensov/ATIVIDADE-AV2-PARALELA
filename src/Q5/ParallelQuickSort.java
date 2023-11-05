@@ -1,8 +1,19 @@
 package Q5;
 
-public class Sort {
+public class ParallelQuickSort extends Thread {
+    private int[] arr;
+    private int low, high;
 
+    public ParallelQuickSort(int[] arr, int low, int high) {
+        this.arr = arr;
+        this.low = low;
+        this.high = high;
+    }
 
+    @Override
+    public void run() {
+        quickSort(arr, low, high);
+    }
 
     public static void quickSort(int[] arr, int low, int high) {
         if (low < high) {
@@ -31,5 +42,4 @@ public class Sort {
 
         return i + 1;
     }
-
 }
