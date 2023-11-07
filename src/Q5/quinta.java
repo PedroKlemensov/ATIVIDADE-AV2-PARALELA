@@ -7,7 +7,7 @@ public class quinta {
     public static void main(String[] args) throws InterruptedException {
 
         //se eu almentar o limite em mais um zero meu computando n conseque fazer o metodo paralelo
-        int limite = 1000;
+        int limite = 1000000;
         Random random = new Random();
 
         int [] valores =new int [limite];
